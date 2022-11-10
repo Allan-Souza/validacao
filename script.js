@@ -67,3 +67,14 @@ function successValidation(input) {
 
     formControl.className = 'form-control success'
 }
+
+const mostrar = document.querySelector('#show-password');
+
+mostrar.addEventListener("change", (el) => {
+    if (mostrar.checked) {
+        password.type = "text"
+        passwordTwo.type = "text"
+    }
+});
+
+selecionado.dispatchEvent(new Event("change"));
