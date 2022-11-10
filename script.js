@@ -78,3 +78,13 @@ mostrar.addEventListener("change", (el) => {
 });
 
 selecionado.dispatchEvent(new Event("change"));
+
+function cadastrar (usernameValue, emailValue, passwordValue) {
+    const user ={
+        name: usernameValue,
+        email: emailValue,
+        password: passwordValue,
+    }
+
+    console.log(user)
+}
